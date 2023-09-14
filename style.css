@@ -1,99 +1,92 @@
-  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@400;700&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-  /* #97591c amadeirado ,  */
-  :root{
-   --lighteste: #FFFFFF;
-   --light: #D1DEE9;
-   --mid: #8197A9;
-   --dark: #283845;
-   --darkest: #202C39;
-   --brand: #97591c;
-  }
-  
-  *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter','Arial',sans-serif;
-    }
-    
-    body{
-        height: 100vh;
-        width: 100vw;
-        background-image: url(./imagem/pexels-ann-poan-5797903.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 2em;
-    }
-h1{
-    font-size: 3em;
-    
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@400;700&display=swap');
+:root{
+    --lightest: #FFFFFF;
+    --light: #D1DEE9;
+    --mid: #8197A9;
+    --dark: #283845;
+    --darknest: #202C39;
+    --brand: #97591C;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Arial' ,sans-serif;
 }
 
-    span{
-        color:var(--brand)
-    }
+body {
+    background-image: url(./img/pexels-ann-poan-5797903.jpg);
+    width: 100vw;
+    height: 100vw;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    color: var(--lightest);
 
-
-
-    .container {
-       
-        width: 80%;
-        max-width: 750px;
-        padding: 2em 1em;
-        border-radius: 5px;
-        background-color: var(--dark);
-        box-shadow: 1px 1px 5px var(--darkest)
-        
-        color: var(--lighteste)
-
-    }
-    #cadastro{
-        margin-bottom: 2em;
-    } 
-
-    #texto-input {
-        padding: 0.7em;
-        border-radius: 5px;
-        margin-right: 1em;
-    }
-
-    #texto-input:focus {
-        border-color: var(--brand);
-    }
-
-    main:nth-first-child(){
-        margin-bottom: 2em;
-    }
-    ul{
-        list-style: none;
-        border:1px solid red
-    }
-    li{
-        
+    
+}
+h1 {
+    color: black;
+    font-size: 3em;
+}
+span {
+    color: var(--brand);
+}
+.container {
+    width: 80%;
+    max-width: 750px;
+    padding: 2em 1em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--darknest);
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+#tarefas {
+    min-width: 90%;
+}
+#texto-input {
+    padding: 0.7em;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+#texto-input:focus {
+    outline: 1px solid var(--brand);
+}
+#cadastro{
+    margin-bottom: 2em;
+}
+ul {
+    list-style: none;
+    min-width: 10em;
+}
+li {
     display: flex;
     justify-content: space-between;
-    padding: 0.5;
-    background-color: var(--darkest);
+    padding: 1em;
+    background-color: var(--darknest);
     margin: 0.3em;
     border-radius: 5px;
-    }
-    #tarefas{
-        min-width: 90%;
-      
-    }
-    button{
-        padding: 0.7em;
-        background-color: var(--light);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    button:hover {
-        color: var(--brand);
-        background-color: var(--lighteste);
-    }
+    align-items: center;
+    
+}
+button {
+    padding: 0.7em;
+    background-color: var(--light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    color: var(--brand);
+    background-color: var(--lightest);
+
+}
