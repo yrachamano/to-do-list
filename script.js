@@ -7,8 +7,8 @@ function criarTarefa(valorTarefa) {
     li.innerHTML = `
     <p>${valorTarefa}</p>
     <div> 
-        <button class="excluir"></button>
-        <button class="concluir"></button>
+    <button class="excluir"></button>
+    <button class="concluir"></button>
     </div>`
     return li
 }

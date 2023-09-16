@@ -3,35 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to-do-list</title>
+    <title>To-do List</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<h1>lista de <span>taferas</span></h1>
-<main class="container">
-<form id="cadastro"><input 
-    type="text" 
-    name="texto-input" 
-    id="texto-input" 
-    placeholder="digite sua tarefa">
-    <button id="adicionar">adicionar tarefas</button>
-</form>
+    <header>
+        <h1>Lista de <span>tarefas</span></h1>
+    </header>
+    <main class="container">
+        <form id="cadastro">
+            <input type="text" name="texto-input" id="texto-input" placeholder="digite sua nova tarefa">
+            <button id="adicionar"> Adicionar Tarefa</button>
+        </form>
 
+        <div id="tarefas">
+            <ul>
+                    
+            </ul>
+        </div>
 
-<div id="tarefas">
-    <ul>
-       
-        
-    </ul>
-</div>
-
-</main>
-
-
-
-
-
-
-<script src="script.js"></script>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
