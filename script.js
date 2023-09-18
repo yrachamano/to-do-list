@@ -1,30 +1,6 @@
 const btnAdicionar = document.getElementById('adicionar')
 const valorTarefa = document.getElementById('texto-input');
-
-localStorage.setItem('lista', '')
-
-const localTarefas = document.getElementById('tarefas')
-
-localStorage.setItem('teste', JSON.stringify(nomes))
-
-const recuperandoDados = JSON.parse(localStorage.getItem('teste'))
-console.log(typeof(recuperandoDados))
-
-recuperandoDados.push('Gustavo')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var itens = []
 
 
 
@@ -78,3 +54,19 @@ listaTarefas.addEventListener('click', (elemento) => {
     }
 
 }) 
+
+    function salvadorMemoria () {
+    let itensLista = Array.from(listaTarefas.children)
+
+    for (let i = 0; i < itensLista.length; i++) {
+        itens[i] = itensLista[i].innerHTML
+    }
+    let itensLocal = JSON.stringify(itens)
+    localStorage.setItem('itens', itensLocal)
+}
+
+if (localStorage.getItem('itens')) {
+    itens = JSON.parse(localStorage.getItem('itens'))
+    itens.forEach( item => {
+        rendereizarTarefa(item)
+    })}
