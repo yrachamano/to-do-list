@@ -1,8 +1,38 @@
 const btnAdicionar = document.getElementById('adicionar')
 const valorTarefa = document.getElementById('texto-input');
 
+localStorage.setItem('lista', '')
+
+const localTarefas = document.getElementById('tarefas')
+
+localStorage.setItem('teste', JSON.stringify(nomes))
+
+const recuperandoDados = JSON.parse(localStorage.getItem('teste'))
+console.log(typeof(recuperandoDados))
+
+recuperandoDados.push('Gustavo')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function criarTarefa(valorTarefa) {
     const li = document.createElement('li')
+
 
     li.innerHTML = `
     <p>${valorTarefa}</p>
