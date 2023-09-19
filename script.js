@@ -1,7 +1,6 @@
 const btnAdicionar = document.getElementById('adicionar')
 const valorTarefa = document.getElementById('texto-input');
-var itens = []
-
+var itensLista = []
 
 
 
@@ -55,18 +54,4 @@ listaTarefas.addEventListener('click', (elemento) => {
 
 }) 
 
-    function salvadorMemoria () {
-    let itensLista = Array.from(listaTarefas.children)
-
-    for (let i = 0; i < itensLista.length; i++) {
-        itens[i] = itensLista[i].innerHTML
-    }
-    let itensLocal = JSON.stringify(itens)
-    localStorage.setItem('itens', itensLocal)
-}
-
-if (localStorage.getItem('itens')) {
-    itens = JSON.parse(localStorage.getItem('itens'))
-    itens.forEach( item => {
-        rendereizarTarefa(item)
-    })}
+    
